@@ -8,7 +8,7 @@ public class Ta {
         int numero = leitor.nextInt();
 
         String resultado = (numero % 2 == 0) ? "par" : "impar";
-        System.out.println("este numero é "+ numero);
+        System.out.println("este numero é "+ resultado);
 
     }
 
