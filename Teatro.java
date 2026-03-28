@@ -4,16 +4,26 @@ public class Teatro {
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
 
-char[][] cadeiras= new char [12][12];
+char[][][] cadeiras= new char[2] [12][12];
 
+for(int s = 0; s < 2;s++){
+
+
+   
+    
+ 
  for (int i = 0; i< 12; i++){
     for(int j = 0; j<12; j++){
-        cadeiras[i][j]=' ';
+        cadeiras[s][i][j]=' ';
     }
  }
+}
   int opcao;
   do{
             System.out.println("Seja Bem-vindo ao Teatro Devisate");
+             System.out.println("Em qual sala você deseja entrar? 1=sala v8 com velozes e furiosos e 2=sala w16 com need for speed");
+             int s = leitor.nextInt();
+            
             System.out.println("1. Exibir Mapa da Sala");
             System.out.println("2. Reservar umva Cadeira (o valor é 50% do inresso inteiro)");
             System.out.println("3. Comprar Cadeira (O valor 100% do ingresso inetero)");
@@ -120,7 +130,7 @@ int cabes = leitor.nextInt();
         }
         
         break;
-    case 5:
+    
     
 
 
@@ -135,7 +145,7 @@ System.out.println("Opção inválida, tente novamente, ou olha se tu não digit
 }
 
 
-} while (opcao != 0);
+ }while (opcao != 0);
 
 
 
