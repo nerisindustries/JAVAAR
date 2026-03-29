@@ -4,9 +4,9 @@ public class Teatro {
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
 
-char[][][] cadeiras= new char[2] [12][12];
+char[][][] cadeiras= new char[6] [12][12];
 
-for(int s = 0; s < 2;s++){
+for(int s = 0; s < 6;s++){
 
 
    
@@ -22,11 +22,11 @@ for(int s = 0; s < 2;s++){
   do{
     
             System.out.println("Seja Bem-vindo ao Teatro Devisate");
-             System.out.println("Escolha sua sala:\n1=sala v8 com velozes e furiosos\n2=sala w16 com need for speed");
+             System.out.println("Escolha sua sala:\n1=Velozes e furiosos\n2=Need for speed\n3= Fórmula 1\n4=Ford vs Ferrari\n5=Granturismo\n6=Carros");
              
-             int s = leitor.nextInt();
+            int s = leitor.nextInt();
             int vv =s - 1;
-            if(vv <0 || vv > 1){
+            if(vv <0 || vv > 6){
                 System.out.println("Mano, a sala não existe, da uma olhada se você digitou o número correto!");
             }
             else{
