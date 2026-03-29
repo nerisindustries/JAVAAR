@@ -125,7 +125,7 @@ int cabes = leitor.nextInt();
     if (lge >= 0 && lge < 12 && cge >= 0 && cge <12){
         if(cadeiras[vv][lge][cge]=='X' || cadeiras[vv][lge][cge]=='R'){
             cadeiras[vv][lge][cge]= ' ';
-            System.out.println("Reserva cancelada...:( ");
+            System.out.println("Reserva cancelada... :( ");
         }
         
        
@@ -138,8 +138,43 @@ int cabes = leitor.nextInt();
         break;
     
     
+case 5:
+    int vo= 0;
+    int ro= 0;
+    int cs= 0;
+    double pint = 160.00;
+        System.out.println("Vamos ver quanto arrecadamos neste espetáculo......");
+for(char[] fileiras:cadeiras[vv]){
+ for(char lugar:fileiras){
+
+if(lugar==' '){
+    vo++;
+}else if(lugar=='R'){
+    ro++;
+
+}
+else if(lugar=='X'){
+    cs++;
+}
+
+ 
 
 
+
+ }
+ }
+ 
+double lt = (cs*pint)+(ro*(pint*0.5));
+double ltr = 144 *(pint*0.5);
+double ltc = 144 * pint ;
+System.out.println("Neste evento foram arrecadados R$" +lt+ " reais");
+System.out.println(vo+" cadeiras ficaram vazias!");
+System.out.println(ro+" cadeiras foram reservadas resultando em R$"+(ro*(pint*0.5))+" reais");
+System.out.println(cs+" cadeiras foram compradas resultando em R$"+(cs*pint)+" reais");   
+System.out.println("Caso todas as cadeiras fossem compradas o resultado seria de R$"+ltc+" reais");   
+System.out.println("Caso todas as cadeiras fossem reservadas o resultado seria de R$"+ltr+" reais");  
+
+break;
 
 
         case 0:
