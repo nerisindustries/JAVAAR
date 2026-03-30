@@ -175,34 +175,8 @@ System.out.println("Caso todas as cadeiras fossem compradas o resultado seria de
 System.out.println("Caso todas as cadeiras fossem reservadas o resultado seria de R$"+ltr+" reais");  
 
 break;
-case 6:
-    int pag = 0;
-    int iPp = 7;
-    int te = 20;
-int ttp= (int)Math.ceil((double) te/iPp);
-
-String[] titles = new string[];
-for(int i i=0;i<20;i++){
-    System.out.println(titles[i]="Exercício"+(i+1));
-}
-String cdm="";
-for (int = inio; i< mim;i++){
-    System.out.println()
-}
-
-do{
-    int inio = pA * ppp;
-
- int mim = Math.min(inio + iPp, te);
- System.out.println("\n\nPágina"+pa)
-
- system.out.println((i+1)+"-"`+titulos[i])
-}
-
-
-
-    system.out.println("Menu de exercíos")
-String acao="";
+   
+    
 
         case 0:
         System.out.println("Falou, obrigado pela sua prefeência, volte sempre!!!!!!!!!!");
@@ -218,5 +192,5 @@ System.out.println("Opção inválida, tente novamente, ou olha se tu não digit
   
   }
 
-}
 
+}
