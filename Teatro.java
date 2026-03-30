@@ -35,7 +35,6 @@ for(int s = 0; s < 6;s++){
             System.out.println("3. Comprar Cadeira (O valor 100% do ingresso inetero)");
             System.out.println("4. Cancelar a sua Reserva");
             System.out.println("5. Relatório Financeiro");
-            System.out.println("6. Lista de Exercícios");
             System.out.println("0. Sair do sistema");
             System.out.print("Escolha uma opção: ");
             
